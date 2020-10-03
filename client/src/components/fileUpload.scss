@@ -1,0 +1,107 @@
+
+$mygreen: #69b3a2;
+$mylightblue: #4c7c9b;
+
+.input-cont {
+  background-color: red;
+  width: 80%;
+}
+
+.sub-btn {
+  background-color: #2a314e;
+  box-shadow: 10px 14px 35px -1px rgba(0,0,0,0.55);
+  // background-color: #a26e84d5;
+  flex: 1;
+  margin: 0 10px;
+  height: 70px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all 500ms;
+  cursor: pointer;
+  &:hover {
+    opacity: 50%;
+  }
+
+}
+
+.file-input {
+  background-color: blue;
+}
+
+.form-cont {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  input{
+    color: white
+  }
+}
+.file-name-cont{
+    flex: 2;
+    margin: 0 10px;
+    height: 70px;
+    background-color: #2a314e;
+    box-shadow: 10px 14px 35px -1px rgba(0,0,0,0.55);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 15px;
+    box-sizing:border-box
+}
+.file-name{
+    width: 80%;
+    overflow: hidden;
+    color: white;
+    
+}
+.upload-btn {
+  flex: 1;
+  margin: 0 10px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  position: relative;
+//   background-image: linear-gradient(to bottom, #a38215e1 50%, #ffffff 50%);
+  background-color: $mygreen; 
+  box-shadow: 10px 14px 35px -1px rgba(0,0,0,0.55);
+   
+//   background-size: 100% 200%;
+  transition: all 500ms;
+
+  .upload-icon {
+    height: 50px;
+    width: 50px;
+    color: #2a314e;
+  }
+.file-input {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          cursor: pointer;
+          border: none;
+        }
+
+  &:hover {
+    // background-position: 0 -100%;
+    .upload-icon {
+        color: white;
+        opacity: 70%;
+        transition: all 500ms;
+    //   color: blue;
+    }
+  }
+}
